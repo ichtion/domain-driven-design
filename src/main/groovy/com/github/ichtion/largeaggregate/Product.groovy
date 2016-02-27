@@ -12,6 +12,8 @@ import com.github.ichtion.strongtypes.TenantId
 /**
  * We have two options here:
  * a) anemic-ish model - #@AggregateRoot protects all invariants and #@Entities are anemic
+ *        - Product contains only releases (Demeter rule will be broken)
+ *        - Product contains all entities (Demeter rule preserved)
  * b) we delegate protection of given invariant to an #@Entity
  * Such situation may indicate wrong boundaries of an aggregate
  */

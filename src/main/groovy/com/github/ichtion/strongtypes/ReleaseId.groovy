@@ -5,10 +5,10 @@ import com.github.ichtion.annotations.ValueObject
 import static java.util.UUID.randomUUID
 
 @ValueObject
-class SprintId {
+class ReleaseId {
     def id
 
-    static SprintId randomSprintId() {
-        new SprintId(id: randomUUID())
+    static ReleaseId randomReleaseId() {
+        new ReleaseId(id: randomUUID())
     }
 }

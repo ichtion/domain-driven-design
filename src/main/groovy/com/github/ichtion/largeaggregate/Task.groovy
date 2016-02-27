@@ -6,8 +6,8 @@ import groovy.transform.PackageScope
 @Entity(identifiers = ['description', 'originalEstimate'])
 @PackageScope
 class Task {
-    String description
-    int originalEstimate
+    final String description
+    final int originalEstimate
     int hoursToFinish
 
     Task(String description, int originalEstimate) {
