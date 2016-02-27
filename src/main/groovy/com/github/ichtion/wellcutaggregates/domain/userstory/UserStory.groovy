@@ -15,9 +15,9 @@ import groovy.transform.TupleConstructor
 class UserStory {
     private TenantId tenantId
     private ProductId productId
+    private SprintId sprintId
 
     private UserStoryId id
-    private SprintId sprintId
     private UserStoryDescription description
     private UserStoryEstimate estimate
 
